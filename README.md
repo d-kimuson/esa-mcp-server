@@ -1,4 +1,5 @@
 # esa-mcp-server
+[![smithery badge](https://smithery.ai/badge/@d-kimuson/esa-mcp-server)](https://smithery.ai/server/@d-kimuson/esa-mcp-server)
 
 esa-mcp-server は、[esa.io](https://esa.io) の API を [Model Context Protocol (MCP)](https://github.com/microsoft/model-context-protocol) を介して利用できるようにするサーバーです。
 

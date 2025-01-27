@@ -1,0 +1,21 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - esaApiKey
+      - defaultEsaTeam
+    properties:
+      esaApiKey:
+        type: string
+        description: Your API key for accessing esa.io.
+      defaultEsaTeam:
+        type: string
+        description: The default team within esa.io to interact with.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['dist/index.js'], env: { ESA_API_KEY: config.esaApiKey, DEFAULT_ESA_TEAM: config.defaultEsaTeam } })
