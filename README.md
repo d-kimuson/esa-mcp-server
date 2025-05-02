@@ -34,6 +34,16 @@ esa-mcp-server は、[esa.io](https://esa.io) の API を [Model Context Protoco
 }
 ```
 
+
+
+## evals の実行方法
+
+evals パッケージは MCP クライアントを読み込み、その後 `index.ts` ファイルを実行するため、テストのたびに再ビルドする必要はありません。環境変数は `npx` コマンドの前に付けることで読み込むことができます。完全なドキュメントは [こちら](https://www.mcpevals.io/docs) にあります。
+
+
+```bash
+OPENAI_API_KEY=your-key  npx mcp-eval src/evals/evals.ts src/server.ts
+```
 ## プロンプト例
 
 ```markdown
