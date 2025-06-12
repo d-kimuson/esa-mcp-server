@@ -1,6 +1,5 @@
-import { object, z } from "zod"
+import { z } from "zod"
 import { orderSchema, sortSchema } from "./schema"
-import { Post } from "./generated/esa-api/esaAPI.schemas"
 import {
   deleteV1TeamsTeamNamePostsPostNumber,
   getV1TeamsTeamNamePosts,

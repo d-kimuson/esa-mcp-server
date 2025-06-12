@@ -137,3 +137,4 @@ dist
 
 # Claude Code
 /.claude/settings.local.json
+/.claude/mcp.json

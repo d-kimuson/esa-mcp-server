@@ -46,3 +46,8 @@ orvalを使用してOpenAPI仕様からTypeScript APIクライアントコード
 ### レスポンス形式
 
 全ツールレスポンスは `formatTool` ユーティリティを通じてトークン効率化のためYAML形式を使用。
+
+### コーディングメモ
+
+- node の標準ライブラリ使うときは node:path みたいな prefix ちゃんとつけて
+- ライブラリを追加するときは package.json を直接触るのは厳禁。pnpm add, pnpm add -D を使って追加して。
