@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/d-kimuson-esa-mcp-server-badge.png)](https://mseep.ai/app/d-kimuson-esa-mcp-server)
+
 # esa-mcp-server
 
 [![smithery badge](https://smithery.ai/badge/@d-kimuson/esa-mcp-server)](https://smithery.ai/server/@d-kimuson/esa-mcp-server)
