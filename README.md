@@ -6,6 +6,25 @@ esa-mcp-server は、[esa.io](https://esa.io) の API を [Model Context Protoco
 
 <a href="https://glama.ai/mcp/servers/undwqgwbtd"><img width="380" height="200" src="https://glama.ai/mcp/servers/undwqgwbtd/badge" alt="ESA Server MCP server" /></a>
 
+## 📢 重要なお知らせ
+
+**[esa公式のローカルMCPサーバー](https://docs.esa.io/posts/561)がリリースされました！** 🎉
+
+公式のMCP Serverは多機能で、チーム管理、記事管理、コメント管理、カテゴリ管理、ヘルプ・ドキュメント、Resource、Promptなど幅広い機能を提供しています。そちらも確認することをおすすめします。
+
+### 公式とこのリポジトリの違い
+
+公式のMCP Serverとこのリポジトリの実装にはトレードオフがあります：
+
+- **公式**: 多機能でできることが多い（システムプロンプト: 約11.3k tokens）
+- **このリポジトリ**: 記事の検索・追加・更新のツールに機能が限定されるが、コンパクトな設計（システムプロンプト: 約3.4k tokens, 公式比 1/3 以下）
+
+### 推奨
+
+公式の MCP Server の利用を推奨しますが、コンテキストウィンドウの圧迫が激しいため [d-kimuson/modular-mcp](https://github.com/d-kimuson/modular-mcp) のような遅延読み込みアプローチや、プロジェクトを限定した追加・必要な時だけ追加するといった運用とセットで利用するのがオススメです。
+
+こういった面倒事を考えたくない場合は、このリポジトリの esa-mcp-server であれば比較的コンテキスト圧迫が激しくないため単体でも追加しやすいです。
+
 ## 機能
 
 - get_search_query_document: esa.io の記事を検索するためのドキュメンテーションの提供
